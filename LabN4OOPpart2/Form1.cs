@@ -38,7 +38,7 @@ namespace LabN4OOPpart2
             {
                 textBox2.Text = (Int32.Parse(textBox1.Text) - 1).ToString();
             }
-            textBox3.Text = textBox1.Text;*/
+            textBox3.Text = textBox2.Text;*/
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)   // Изменения текста
@@ -60,22 +60,11 @@ namespace LabN4OOPpart2
 
             model.setValue2(Int32.Parse(textBox3.Text));
 
-            /*if (Int32.Parse(textBox1.Text) == Int32.Parse(textBox3.Text))
-            {
-                textBox1.Text = textBox3.Text;
-                if (Int32.Parse(textBox1.Text) <= Int32.Parse(textBox2.Text))
-                {
-                    textBox2.Text = (Int32.Parse(textBox1.Text) - 1).ToString();
-                }
-            }
-            else
-            {
-                textBox2.Text = textBox3.Text;
-                if (Int32.Parse(textBox1.Text) <= Int32.Parse(textBox2.Text))
-                {
-                    textBox1.Text = (Int32.Parse(textBox2.Text) + 1).ToString();
-                }
-            }*/
+            /* if (Int32.Parse(textBox1.Text) <= Int32.Parse(textBox3.Text))
+             {
+                 textBox1.Text = (Int32.Parse(textBox3.Text) + 1).ToString();
+             }
+             textBox2.Text = textBox3.Text;*/
         }
 
         private void UpdateFormModel(object sender, EventArgs e)    // Обновление
